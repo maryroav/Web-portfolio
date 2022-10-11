@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #2c2e46;
+  --secondary-color: #fbf8cc;
+  --tertiary-color: #f5ee84;
+  --quaternary-color: #a17a7a;
+}
+
+body {
+  margin: 0 60px;
+  background: var(--primary-color);
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 100px;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: var(--secondary-color);
+}
+
+.introduction {
+  margin: 210px 0;
+}
+
+.primary-button {
+  background: var(--tertiary-color);
+  color: #474306;
+  margin: 10px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.primary-button:hover {
+  background: #fdf9c1;
+  color: #474306;
+}

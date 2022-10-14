@@ -3,6 +3,7 @@
   --secondary-color: #fbf8cc;
   --tertiary-color: #f5ee84;
   --quaternary-color: #a17a7a;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 }
 
 h1 {
+  text-align: left;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 100px;
@@ -19,21 +21,31 @@ h1 {
 
 h2 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 28px;
   color: var(--secondary-color);
 }
 
-.introduction {
+.hero {
   margin: 210px 0;
 }
 
 .primary-button {
   background: var(--tertiary-color);
   color: #474306;
-  margin: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
   padding: 15px 20px;
   border-radius: 5px;
+  box-shadow: var(--box-shadow);
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
@@ -41,4 +53,63 @@ h2 {
 .primary-button:hover {
   background: #fdf9c1;
   color: #474306;
+}
+
+.projects p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.project-info .project-date {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--quaternary-color);
+}
+
+.project-info {
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero .primary-button {
+    display: block;
+    text-align: center;
+    margin: 0 40px;
+  }
+
+  .projects p {
+    text-align: center;
+  }
+
+  .projects .section-description {
+    font-size: 16px;
+  }
+
+  .projects .primary-button {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .project-info .project-text-description {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px !important;
+  }
 }

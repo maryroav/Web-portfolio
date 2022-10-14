@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -53,15 +54,91 @@
       </nav>
     </header>
 
-    <section class="introduction">
-      <h2>Hello! I'm María,</h2>
+    <section class="hero">
+      <h3>Hello! I'm María,</h3>
       <h1>
         Front-end <br />
         developer
       </h1>
-      <h2>based in Venezuela.</h2>
+      <h3>based in Venezuela.</h3>
       <div class="mt-5 mb-5">
         <a href="#" class="primary-button">Contact me</a>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h1>Work</h1>
+      <p class="section-description">Some of the projects I've worked on.</p>
+
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-sm-6 mb-5 d-none d-sm-block">
+            <img
+              src="images/weather-app.png"
+              alt="Weather project"
+              class="img-fluid rounded mx-auto d-block"
+            />
+          </div>
+
+          <div class="col-sm-6">
+            <div class="project-info">
+              <h2>Weather App</h2>
+              <p class="project-date">September 2022</p>
+              <p class="mt-4 mb-5 project-text-description">
+                Weather App with updated timezone, 5-day forecast prediction and
+                moon phase indicator.
+              </p>
+              <a
+                href="https://imaginative-moxie-a36fca.netlify.app/"
+                target="_blank"
+                class="primary-button"
+                >See project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-sm-6">
+            <div class="project-info">
+              <h2>Landing Page</h2>
+              <p class="project-date">August 2022</p>
+              <p class="mt-4 mb-5 project-text-description">
+                Landing page about <i>La Colonia Tovar</i>, a German town
+                located in Venezuela.
+              </p>
+              <a href="#" class="primary-button">See project</a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 mb-5 d-none d-sm-block">
+            <img
+              src="images/la-colonia-tovar.png"
+              alt="Landing page about La Colonia Tovar"
+              class="img-fluid rounded mx-auto d-block"
+            />
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-sm-6 mb-5 d-none d-sm-block">
+            <img
+              src="images/under-construction.png"
+              alt="Weather project"
+              class="img-fluid mx-auto d-block"
+              width="400px"
+            />
+          </div>
+
+          <div class="col-sm-6">
+            <div class="project-info">
+              <h2>Dictionary App</h2>
+              <p class="project-date">Coming soon</p>
+              <p class="mt-4 mb-5 project-text-description">Coming soon...</p>
+              <a href="#" class="primary-button">See project</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
